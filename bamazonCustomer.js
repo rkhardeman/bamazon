@@ -70,6 +70,9 @@ var launchApp = function (){
                         console.log("Success! Your total is $" + purchasePrice);
                         launchApp();
                     });
+       		 } else {
+       		 	console.log('Sorry, there is not enough items in stock for your request');
+       		 	launchApp();
        		 }
     	});// connection query
 	})// end of query for function(answer)
